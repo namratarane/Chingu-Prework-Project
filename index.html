@@ -1,42 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTpwdF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
-        <meta name="theme-color" content="#000000" />
-        <title>My Website</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <!-- Add additional CSS & JS files as necessary here -->
+        <link rel="stylesheet" href="src/css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TickyBot</title>
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to My Website!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
+        <header class="pageHeader">
+        <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#mainSection">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#addToSlack">Add to Slack</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>            
+        <main>
+                <section class="container tickybot" id="mainSection">
+                    <div>
+                        <div class="tickybotInfo">
+                            <h1><strong><em>Ticky</em></strong>Bot</h1>
+                            <p>Let your team manage their support tickets 100% inside Slack</p>
+                            <button class="light">Add to <strong>Slack</strong></button>
+                        </div>
+                        <div class="tickybotImg">
+                            <img src="src/assets/tickybot.svg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="container about" id="about">
+                    <div>
+                        <p>About</p>
+                    </div>
+                </section>
+                <section class="container features" id="features">
+                    <h1>How It Works</h1> 
+                </section>                
+        
+        </main>
+        <footer>
+            <div class="pageHeader pageFooter">
+                    <p>Made with
+                        <span class="emoji" role="img" aria-label="Love">❤️</span> by Namrata Rane</p>
+                    <p>Source code is available on our
+                        <a href="" target="_blank" rel="noopener noreferrer">GitHub page</a>
+                    </p>
+                    <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+            </div>
+        </footer>
+        <div class="backToTop">
+                <a href="#mainSection">
+                <img src="src/assets/top.svg" alt="">
+                <span class="screen-reader-text">Top</span>
+            </a>
+        </div>    
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
+        
     </body>
 </html>
+
+
+
+
+
